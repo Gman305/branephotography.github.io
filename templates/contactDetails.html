@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar shadow-sm navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+      <a class="nav-link ms-2" href="{% url 'home' %}">
+          <i class="bi bi-camera fs-3" style="margin-right: 10px"></i>
+      </a>
+    <a class="navbar-brand fw-bolder" href="{% url 'home' %}">Brane Photography</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+        <a class="nav-link" href="#">About me</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid d-flex justify-content-center align-content-center" style="background-image: url('https://images.pexels.com/photos/763097/pexels-photo-763097.jpeg');background-size: cover;background-position: center;height: 675px" >
+    <div class="row d-flex justify-content-center align-content-center">
+        <div class="col d-flex justify-content-center align-content-center p-5">
+            <h1 class="text-light display-2">Welcome to the art of visual storytelling</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid d-flex justify-content-center p-5" style="height: 100vh">
+    <div class="row d-flex justify-content-center bg-black w-50" style="border-radius: 10px">
+        <h1 class="text text-light text-center p-3 mt-3 display-6">Contact Details</h1>
+        <div class="d-flex p-4 bg-light border border-black align-items-center">
+            <i class="bi bi-telephone-fill fs-2 text-black" style="margin-right: 27%"></i>
+            <h2 class="text text-black display-6">075-310-280</h2>
+        </div>
+        <div class="d-flex p-4 bg-light border border-black align-items-center">
+            <i class="bi bi-facebook fs-2 text-black" style="margin-right: 27%"></i>
+            <h2 class="text text-black display-6">Brane Photography</h2>
+        </div>
+        <div class="d-flex p-4 bg-light border border-black align-items-center">
+            <i class="bi bi-envelope fs-2 text-black" style="margin-right: 27%"></i>
+            <h2 class="text text-black display-6">brane.phr@gmail.com</h2>
+        </div>
+        <div class="d-flex p-4 bg-light border border-black align-items-center" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">
+            <i class="bi bi-instagram fs-2 text-black" style="margin-right: 27%"></i>
+            <h2 class="text text-black display-6">@Brane.phr</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <footer class="row d-flex justify-content-center align-items-center mt-3" style="background: black;height: 50px;">
+    <div class="col d-flex justify-content-center align-items-center">
+        <p class="text-light m-0">&copy; Brane Photography</p>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>
